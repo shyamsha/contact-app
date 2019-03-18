@@ -7,7 +7,7 @@ const CONNECTION_URI =
 
 mongoose.Promise = global.Promise;
 mongoose
-	.connect(paCONNECTION_URI, {
+	.connect(CONNECTION_URI, {
 		useNewUrlParser: true
 	})
 	.then(() => {

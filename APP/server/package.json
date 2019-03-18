@@ -4,7 +4,9 @@
 	"description": "",
 	"main": "contact-manger-db.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
 	},
 	"author": "",
 	"license": "ISC",
@@ -16,10 +18,8 @@
 		"mongoose": "^5.4.4",
 		"validator": "^10.11.0"
 	},
-	"start": "node index.js",
-	"heroku-postbuild": "cd client && npm install && npm run build",
 	"engines": {
-		"node": "10.3.0",
-		"npm": "6.8.0"
+		"node": "^10.3.0",
+		"npm": "^6.8.0"
 	}
 }
